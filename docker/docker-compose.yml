@@ -1,0 +1,75 @@
+version: '3'
+services:
+  hj-mysql:
+    image: mysql:latest
+    container_name: hj-mysql
+    build:
+      context: ./mysql
+    restart: always
+    volumes:
+      - ./mysql/conf:/etc/mysql/conf.d
+      - ./mysql/logs:/logs
+      - ./mysql/data:/var/lib/mysql
+    command: [
+      'mysqld',
+      '--innodb-buffer-pool-size=80M',
+      '--character-set-server=utf8mb4',
+      '--collation-server=utf8mb4_unicode_ci',
+      '--default-time-zone=+8:00',
+      '--lower-case-table-names=1'
+    ]
+    environment:
+      MYSQL_ROOT_PASSWORD: "772147"
+      MYSQL_DATABASE: hj-config
+    ports:
+      - "3306:3306"
+
+  hj-redis:
+    image: redis:latest
+    container_name: hj-redis
+    build:
+      context: ./redis
+    ports:
+      - "6379:6379"
+    restart: always
+    volumes:
+      - ./redis/conf/redis.conf:/home/ruoyi/redis/redis.conf
+      - ./redis/data:/data
+    command: redis-server /home/ruoyi/redis/redis.conf
+
+  hj-nacos:
+    image: nacos/nacos-server:v2.1.1
+    container_name: hj-nacos
+    build:
+      context: ./nacos
+    restart: always
+    environment:
+      - MODE=standalone
+      - PREFER_HOST_MODE=hostname
+      - JVM_XMS=256m
+      - JVM_XMX=256m
+    ports:
+      - "8848:8848"
+      - "9848:9848"
+      - "9849:9849"
+    volumes:
+      - ./nacos/logs/:/home/nacos/logs
+      - ./nacos/conf/application.properties:/home/nacos/conf/application.properties
+    depends_on:
+      - hj-mysql
+
+  hj-sentinel:
+    image: bladex/sentinel-dashboard:latest
+    container_name: hj-sentinel
+    restart: always
+    ports:
+      - "8718:8858"
+
+  hj-seata:
+    image: seataio/seata-server:latest
+    container_name: hj-seata-server
+    restart: always
+    ports:
+      - "8091:8091"
+      - "7091:7091"
+

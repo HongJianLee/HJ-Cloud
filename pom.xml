@@ -5,8 +5,17 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.hj</groupId>
+
     <artifactId>HJ-Cloud</artifactId>
+
     <version>1.0.0-SNAPSHOT</version>
+
+    <modules>
+        <module>hj-common</module>
+        <module>hj-common/hj-common-core</module>
+        <module>hj-gateway</module>
+    </modules>
+
     <packaging>pom</packaging>
 
     <name>HJ-Cloud</name>
