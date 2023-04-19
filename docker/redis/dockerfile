@@ -4,7 +4,7 @@ FROM redis:latest
 MAINTAINER hj
 
 # 挂载目录
-VOLUME /home/ruoyi/redis
+VOLUME /home/hj/redis
 # 创建目录
 RUN mkdir -p /home/hj/redis
 # 指定路径
