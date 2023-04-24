@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>HJ-Cloud</artifactId>
         <groupId>org.hj</groupId>
+        <artifactId>HJ-Cloud</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.hj</groupId>
-    <artifactId>hj-common</artifactId>
+    <artifactId>hj-modules</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <description>通用模块</description>
 
     <modules>
-        <module>hj-common-core</module>
+        <module>base-cloud-module</module>
+        <module>base-dubbo-module</module>
     </modules>
+
+    <description>
+        hj-modules业务模块
+    </description>
+
 </project>

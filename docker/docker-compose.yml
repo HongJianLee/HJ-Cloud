@@ -19,7 +19,7 @@ services:
       '--lower-case-table-names=1'
     ]
     environment:
-      MYSQL_ROOT_PASSWORD: "123456"
+      MYSQL_ROOT_PASSWORD: "772147"
       MYSQL_DATABASE: hj-config
     ports:
       - "3306:3306"

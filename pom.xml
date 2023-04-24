@@ -3,24 +3,18 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>org.hj</groupId>
-
     <artifactId>HJ-Cloud</artifactId>
-
     <version>1.0.0-SNAPSHOT</version>
-
-    <modules>
-        <module>hj-common</module>
-        <module>hj-common/hj-common-core</module>
-        <module>hj-gateway</module>
-    </modules>
-
     <packaging>pom</packaging>
-
     <name>HJ-Cloud</name>
     <url>xxxxxxxxxxxx</url>
     <description>HJ-Cloud微服务系统</description>
+
+    <modules>
+        <module>hj-common</module>
+        <module>hj-modules</module>
+    </modules>
 
     <properties>
         <java.version>1.8</java.version>
@@ -28,6 +22,7 @@
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <build.plugins.plugin.version>3.8.1</build.plugins.plugin.version>
         <spring-cloud.version>2021.0.5</spring-cloud.version>
         <spring-cloud-alibaba.version>2021.0.4.0</spring-cloud-alibaba.version>
         <spring-boot.version>2.7.7</spring-boot.version>
@@ -35,8 +30,8 @@
         <swagger.core.version>1.6.2</swagger.core.version>
         <fastjson.version>2.0.23</fastjson.version>
         <jjwt.version>0.9.1</jjwt.version>
+        <hutool.version>5.8.18</hutool.version>
     </properties>
-
     <!-- 依赖声明 -->
     <dependencyManagement>
         <dependencies>
@@ -94,15 +89,23 @@
                 <version>${jjwt.version}</version>
             </dependency>
 
+            <!-- bootstrap 启动器 -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-bootstrap</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-bom</artifactId>
+                <version>${hutool.version}</version>
+                <type>pom</type>
+                <!-- 注意这里是import -->
+                <scope>import</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
     <dependencies>
-        <!-- bootstrap 启动器 -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-bootstrap</artifactId>
-        </dependency>
     </dependencies>
 
     <build>
@@ -110,6 +113,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>${build.plugins.plugin.version}</version>
                 <configuration>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
@@ -135,6 +139,7 @@
         </pluginManagement>
     </build>
 
+    <!-- 配置nexus远程仓库 -->
     <repositories>
         <repository>
             <id>public</id>
@@ -146,6 +151,7 @@
         </repository>
     </repositories>
 
+    <!-- 配置从哪个仓库中下载构件，即jar包 -->
     <pluginRepositories>
         <pluginRepository>
             <id>public</id>
@@ -159,5 +165,19 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
+
+    <!-- 配置deploy到哪个仓库中 -->
+    <distributionManagement>
+<!--        <repository>-->
+<!--            <id>demo-release</id>-->
+<!--            <name>demo-release</name>-->
+<!--            <url>http://XXXXX/repository/maven-releases/</url>-->
+<!--        </repository>-->
+<!--        <snapshotRepository>-->
+<!--            <id>demo-snapshots</id>-->
+<!--            <name>demo-snapshots</name>-->
+<!--            <url>http://XXXXX/repository/maven-snapshots/</url>-->
+<!--        </snapshotRepository>-->
+    </distributionManagement>
 
 </project>
