@@ -14,8 +14,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>base-cloud-module</module>
-        <module>base-dubbo-module</module>
+        <module>sva-cloud-module</module>
+        <module>sva-dubbo-module</module>
     </modules>
 
     <description>
