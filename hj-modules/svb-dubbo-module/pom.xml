@@ -10,13 +10,13 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.hj</groupId>
-    <artifactId>sva-dubbo-module</artifactId>
+    <artifactId>svb-dubbo-module</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
-        <module>sva-dubbo-api</module>
-        <module>sva-dubbo-service</module>
+        <module>svb-dubbo-api</module>
+        <module>svb-dubbo-service</module>
     </modules>
 
     <properties>

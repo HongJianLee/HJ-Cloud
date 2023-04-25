@@ -42,6 +42,7 @@
                 <artifactId>spring-cloud-starter-bootstrap</artifactId>
                 <version>${bootstrap.version}</version>
             </dependency>
+
             <!-- SpringCloud 微服务 -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>

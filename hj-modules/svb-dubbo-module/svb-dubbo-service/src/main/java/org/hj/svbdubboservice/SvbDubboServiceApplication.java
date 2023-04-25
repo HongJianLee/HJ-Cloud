@@ -1,13 +1,13 @@
-package org.hj.svadubboservice;
+package org.hj.svbdubboservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SvaDubboServiceApplication {
+public class SvbDubboServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SvaDubboServiceApplication.class, args);
+        SpringApplication.run(SvbDubboServiceApplication.class, args);
     }
 
 }

@@ -15,7 +15,7 @@
 
     <modules>
         <module>sva-cloud-module</module>
-        <module>sva-dubbo-module</module>
+        <module>svb-dubbo-module</module>
     </modules>
 
     <description>

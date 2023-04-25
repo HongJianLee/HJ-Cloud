@@ -1,4 +1,4 @@
-package org.hj.svadubboservice.config;
+package org.hj.svbdubboservice.config;
 
 import org.apache.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.springframework.context.annotation.Configuration;

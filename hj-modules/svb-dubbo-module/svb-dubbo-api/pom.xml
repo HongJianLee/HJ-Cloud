@@ -3,16 +3,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <groupId>org.hj</groupId>
-        <artifactId>sva-dubbo-module</artifactId>
+        <artifactId>svb-dubbo-module</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.hj</groupId>
-    <artifactId>sva-dubbo-api</artifactId>
+    <artifactId>svb-dubbo-api</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <name>sva-dubbo-api</name>
-    <description>sva-dubbo-api</description>
+    <name>svb-dubbo-api</name>
+    <description>svb-dubbo-api</description>
     <packaging>jar</packaging>
 
     <properties>
