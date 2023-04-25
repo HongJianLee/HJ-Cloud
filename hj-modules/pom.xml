@@ -22,4 +22,15 @@
         hj-modules业务模块
     </description>
 
+    <properties>
+        <hj-common-core.version>1.0.0-SNAPSHOT</hj-common-core.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.hj</groupId>
+            <artifactId>hj-common-core</artifactId>
+            <version>${hj-common-core.version}</version>
+        </dependency>
+    </dependencies>
 </project>

@@ -7,10 +7,18 @@
         <groupId>org.hj</groupId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
+
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.hj</groupId>
     <artifactId>base-dubbo-module</artifactId>
     <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>base-dubbo-api</module>
+        <module>base-dubbo-service</module>
+    </modules>
+
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
