@@ -3,6 +3,8 @@ package org.hj.common.core.constant;
 
 import org.hj.common.core.enums.ResultCode;
 
+import java.io.Serializable;
+
 /**
  * <p>
  * 统一API对象返回
@@ -10,7 +12,9 @@ import org.hj.common.core.enums.ResultCode;
  *
  * @author hj
  */
-public class R<T> {
+public class R<T> implements Serializable {
+
+    private static final long serialVersionUID = -5023813389754699854L;
     /**
      * 状态码
      */

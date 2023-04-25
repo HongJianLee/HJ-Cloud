@@ -1,12 +1,12 @@
 package org.hj.svbdubboservice.config;
 
-import org.apache.dubbo.config.spring.context.annotation.EnableDubbo;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.Configuration;
 
 /**
  * @author hong.jian.li
  */
-@EnableDubbo
+@EnableDiscoveryClient
 @Configuration
 public class BootConfiguration {
 }

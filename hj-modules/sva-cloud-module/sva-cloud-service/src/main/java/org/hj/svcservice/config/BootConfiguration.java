@@ -1,4 +1,4 @@
-package org.hj.svacloudservice.config;
+package org.hj.svcservice.config;
 
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;

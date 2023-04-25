@@ -32,7 +32,8 @@
         <jjwt.version>0.9.1</jjwt.version>
         <hutool.version>5.8.18</hutool.version>
         <bootstrap.version>3.1.5</bootstrap.version>
-        <dubbo.version>2.7.8</dubbo.version>
+        <dubbo.version>2.7.13</dubbo.version>
+        <lombok.version>1.18.26</lombok.version>
     </properties>
     <!-- 依赖声明 -->
     <dependencyManagement>
@@ -145,6 +146,11 @@
                         <artifactId>log4j</artifactId>
                     </exclusion>
                 </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

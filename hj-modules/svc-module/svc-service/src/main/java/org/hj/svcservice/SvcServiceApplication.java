@@ -1,13 +1,13 @@
-package org.hj.svacloudservice;
+package org.hj.svcservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SvaCloudServiceApplication {
+public class SvcServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SvaCloudServiceApplication.class, args);
+        SpringApplication.run(SvcServiceApplication.class, args);
     }
 
 }
