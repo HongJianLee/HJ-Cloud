@@ -10,6 +10,6 @@ public class SvbDubboServiceImpl implements SvbDubboService {
 
     @Override
     public Result<String> sayHello(String name) {
-        return Result.success("hello ".concat(name));
+        return  Result.data("hello ".concat(name));
     }
 }
