@@ -35,6 +35,13 @@
         <dubbo.version>2.7.13</dubbo.version>
         <lombok.version>1.18.26</lombok.version>
         <transmittable.version>2.14.2</transmittable.version>
+
+        <docker.baseImage>openjdk:8-jre-alpine</docker.baseImage>
+        <docker.volumes>/tmp</docker.volumes>
+        <!--[registry/][repository/]name[:tag]-->
+        <docker.image.prefix>192.168.3.6:8080/hjcloud</docker.image.prefix>
+        <docker.java.security.egd>-Djava.security.egd=file:/dev/./urandom</docker.java.security.egd>
+        <docker.java.opts>-Xms128m -Xmx128m</docker.java.opts>
     </properties>
     <!-- 依赖声明 -->
     <dependencyManagement>
