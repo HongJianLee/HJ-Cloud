@@ -1,6 +1,6 @@
 spring:
   application:
-    name: svc-service
+    name: @artifactId@
   cloud:
     nacos:
       discovery:

@@ -2,7 +2,7 @@ server:
   port: 8081
 spring:
   application:
-    name: svb-dubbo-service
+    name: @artifactId@
   cloud:
     nacos:
       config:

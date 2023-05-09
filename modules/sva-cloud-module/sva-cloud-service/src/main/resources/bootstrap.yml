@@ -1,6 +1,6 @@
 spring:
   application:
-    name: sva-cloud-service
+    name: @artifactId@
   cloud:
     nacos:
       discovery:
