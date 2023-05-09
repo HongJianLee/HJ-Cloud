@@ -1,9 +1,9 @@
 package org.hj.svbdubboapi.service;
 
 
-import org.hj.common.core.api.Result;
+import org.hj.common.core.api.R;
 
 public interface SvbDubboService {
 
-    Result<String> sayHello(String name);
+    R<String> sayHello(String name);
 }

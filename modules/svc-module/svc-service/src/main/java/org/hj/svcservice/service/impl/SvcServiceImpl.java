@@ -1,7 +1,7 @@
 package org.hj.svcservice.service.impl;
 
 import org.apache.dubbo.config.annotation.DubboReference;
-import org.hj.common.core.api.Result;
+import org.hj.common.core.api.R;
 import org.hj.svacloudapi.service.SvaCloudService;
 import org.hj.svbdubboapi.service.SvbDubboService;
 import org.hj.svcservice.service.SvcService;
@@ -19,12 +19,12 @@ public class SvcServiceImpl implements SvcService {
 
 
     @Override
-    public Result<String> cloudSayHello(String name) {
+    public R<String> cloudSayHello(String name) {
         return svaCloudService.sayHello(name);
     }
 
     @Override
-    public Result<String> dubooSayHello(String name) {
+    public R<String> dubooSayHello(String name) {
         return svbDubboService.sayHello(name);
     }
 }

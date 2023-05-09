@@ -1,11 +1,11 @@
 package org.hj.svcservice.service;
 
 
-import org.hj.common.core.api.Result;
+import org.hj.common.core.api.R;
 
 public interface SvcService {
 
-    Result<String> cloudSayHello(String name);
+    R<String> cloudSayHello(String name);
 
-    Result<String> dubooSayHello(String name);
+    R<String> dubooSayHello(String name);
 }
