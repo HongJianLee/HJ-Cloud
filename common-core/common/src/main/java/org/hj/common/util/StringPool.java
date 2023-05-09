@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package org.hj.common.core.util;
+package org.hj.common.util;
 
 /**
  * Copy to jodd.util

@@ -1,9 +1,9 @@
-package org.hj.common.core.api;
+package org.hj.common.api;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 import lombok.Getter;
-import org.hj.common.core.constant.Constant;
+import org.hj.common.constant.Constant;
 
 import java.io.Serializable;
 

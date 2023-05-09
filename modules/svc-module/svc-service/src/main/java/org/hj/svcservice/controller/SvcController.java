@@ -1,7 +1,7 @@
 package org.hj.svcservice.controller;
 
 import lombok.AllArgsConstructor;
-import org.hj.common.core.api.R;
+import org.hj.common.api.R;
 import org.hj.svcservice.service.SvcService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

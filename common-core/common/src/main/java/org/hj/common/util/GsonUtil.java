@@ -1,4 +1,4 @@
-package org.hj.common.core.util;
+package org.hj.common.util;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

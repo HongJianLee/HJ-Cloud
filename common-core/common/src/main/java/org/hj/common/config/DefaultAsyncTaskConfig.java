@@ -1,8 +1,8 @@
-package org.hj.common.core.config;
+package org.hj.common.config;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.hj.common.core.util.CustomThreadPoolTaskExecutor;
+import org.hj.common.util.CustomThreadPoolTaskExecutor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.task.TaskExecutor;

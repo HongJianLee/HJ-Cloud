@@ -1,6 +1,6 @@
 package org.hj.svcservice.service.impl;
 
-import org.hj.common.core.api.R;
+import org.hj.common.api.R;
 import org.hj.svacloudapi.service.SvaCloudService;
 import org.springframework.web.bind.annotation.RestController;
 

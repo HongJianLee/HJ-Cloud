@@ -1,4 +1,4 @@
-package org.hj.common.core.constant;
+package org.hj.common.constant;
 
 import lombok.experimental.UtilityClass;
 

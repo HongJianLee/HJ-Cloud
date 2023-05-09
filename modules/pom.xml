@@ -24,14 +24,14 @@
     </description>
 
     <properties>
-        <common-core.version>1.0.0-SNAPSHOT</common-core.version>
+        <common.version>1.0.0-SNAPSHOT</common.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.hj</groupId>
-            <artifactId>common-core</artifactId>
-            <version>${common-core.version}</version>
+            <artifactId>common</artifactId>
+            <version>${common.version}</version>
         </dependency>
     </dependencies>
 </project>

@@ -1,7 +1,7 @@
 package org.hj.svbdubboservice.service.impl;
 
 import org.apache.dubbo.config.annotation.DubboService;
-import org.hj.common.core.api.R;
+import org.hj.common.api.R;
 import org.hj.svbdubboapi.service.SvbDubboService;
 
 

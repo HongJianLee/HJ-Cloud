@@ -1,4 +1,4 @@
-package org.hj.common.core.api;
+package org.hj.common.api;
 
 /**
  * 返回码接口

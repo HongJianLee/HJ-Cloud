@@ -1,7 +1,7 @@
 package org.hj.svcservice.service;
 
 
-import org.hj.common.core.api.R;
+import org.hj.common.api.R;
 
 public interface SvcService {
 

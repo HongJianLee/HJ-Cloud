@@ -12,7 +12,7 @@
     <description>HJ-Cloud微服务系统</description>
 
     <modules>
-        <module>common</module>
+        <module>common-core</module>
         <module>modules</module>
     </modules>
 

@@ -1,4 +1,4 @@
-package org.hj.common.core.util;
+package org.hj.common.util;
 
 import java.util.Random;
 

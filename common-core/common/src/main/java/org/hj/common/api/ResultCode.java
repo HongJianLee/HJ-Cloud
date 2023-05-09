@@ -1,4 +1,4 @@
-package org.hj.common.core.api;
+package org.hj.common.api;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
