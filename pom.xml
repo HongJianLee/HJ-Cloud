@@ -12,8 +12,8 @@
     <description>HJ-Cloud微服务系统</description>
 
     <modules>
-        <module>hj-common</module>
-        <module>hj-modules</module>
+        <module>common</module>
+        <module>modules</module>
     </modules>
 
     <properties>
