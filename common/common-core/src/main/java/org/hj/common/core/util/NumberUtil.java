@@ -5,7 +5,7 @@ import java.util.Random;
 /**
  * 数据工具类
  *
- * @author pangu
+ * @author hong.jian.li
  */
 public class NumberUtil {
 

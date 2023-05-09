@@ -14,7 +14,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 /**
  * 异步任务配置
  *
- * @author xuzhanfu
+ * @author hong.jian.li
  */
 @Setter
 @Getter
